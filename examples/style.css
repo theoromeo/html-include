@@ -1,0 +1,110 @@
+* 
+{
+    padding: 0px;
+    border: 0px;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px;
+    font-family: 'Arial';
+}
+
+nav
+{
+    display: flex;
+    padding: 2rem;
+}
+nav > img 
+{
+    width: 100px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.133);
+}
+nav > .links 
+{
+    margin-left: auto;
+}
+nav > .links > a 
+{
+
+    display: inline-block;
+    color: white;
+    font-size: 0.8rem;
+    position: relative;
+    background-color: black;
+    padding: 1rem;
+    margin-right: 1rem;
+
+}
+nav > .links > a > p 
+{
+    position: relative;
+    z-index: 2;
+
+}
+
+nav > .links > a > .line 
+{
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background-color: #393939;
+    transition: 1s;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+}
+nav > .links > a:hover > .line
+{
+    width: 100%;
+}
+
+.container 
+{
+}
+
+#hero
+{
+    text-align: center;
+    padding: 5rem 0px;
+}
+#hero > h1 
+{
+    font-size: 3rem;
+}
+#hero > p 
+{
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+
+.cards 
+{
+    display: flex;
+    padding: 2rem;
+    overflow-x: scroll;
+}
+
+.card 
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
+    margin-right: 2rem;
+}
+.card > img 
+{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(244, 244, 244);
+    outline: none;
+}
+
+.card > h1
+{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+} 

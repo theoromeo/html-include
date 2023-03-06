@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Include Basic - HTML-Include</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="../src/htmlInclude.min.js"></script>
+
+</head>
+<body>
+
+    <nav>
+        <img src="" alt="" id="logo">
+        <div class="links">
+            
+            <include
+            src="./components/nav-link.html"
+            title="Description"
+            $link="#"
+            ></include>
+
+            <include
+            src="./components/nav-link.html"
+            title="Log in"
+            link="#"
+            ></include>
+
+            
+            <include
+            src="./components/nav-link.html"
+            title="Sign Out"
+            link="#"
+            ></include>
+
+            
+        </div>
+    </nav>
+
+    <div class="container">
+        <article id="hero">
+            <h1>Only the greatest <br> website ever made!</h1>
+            <p>Building a beautiful website has never been easier, create reusable components without any back-end with <b>html-include.js</b></p>
+        </article>
+    </div>
+
+    <div class="cards">
+        <include src="./components/card.html" 
+        title="First Card Item"
+        description="
+        Sed ut perspiciatis unde omnis iste natus 
+        error sit voluptatem accusantium doloremque laudantium, 
+        totam rem aperiam, eaque ipsa quae ab illo inventore 
+        veritatis et quasi architecto beatae"
+        image-color="blue"
+        ></include>
+
+
+        <include src="./components/card.html" 
+        title="Second Card Item"
+        description="
+        vitae dicta sunt explicabo. Nemo enim ipsam voluptatem 
+        quia voluptas sit aspernatur aut odit aut fugit, sed
+        quia consequuntur magni dolores eos qui ratione 
+        voluptatem sequi nesciunt. Neque porro quisquam 
+        est, qui dolorem ipsum quia dolor sit amet, 
+        consectetur,"
+        image-color="red"
+        ></include>
+
+        <include src="./components/card.html" 
+        title="Third Card Item"
+        description="
+        adipisci velit, sed quia non numquam eius 
+        modi tempora incidunt ut labore et dolore 
+        magnam aliquam quaerat voluptatem. Ut enim"
+        image-color="green"
+
+        ></include>
+    </div>
+
+
+
+    <script>
+        htmlInclude.init()
+    </script>
+</body>
+</html>
